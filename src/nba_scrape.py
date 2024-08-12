@@ -34,7 +34,7 @@ for tr in champions_table.find_all('tr'):
 
 champions_df = pd.DataFrame(champions_rows, columns=champions_headers)
 
-output_dir = '/Users/shrenick/PycharmProjects/DefenseWinsChampionships'
+output_dir = '/Users/shrenick/PycharmProjects/DefenseWinsChampionships/NBA'
 file_name = 'NBA Champions.csv'
 output_file = os.path.join(output_dir, file_name)
 champions_df.to_csv(output_file, index=False)
@@ -68,7 +68,7 @@ for year in range(1951, 2025):
 
     # Outputs data from the url into a csv file
 
-    output_dir = '/Users/shrenick/PycharmProjects/DefenseWinsChampionships'
+    output_dir = '/Users/shrenick/PycharmProjects/DefenseWinsChampionships/NBA'
     file_name = str(year - 1) + "-" + str(year) + " NBA Advanced Ratings.csv"
     output_file = os.path.join(output_dir, file_name)
     regular_df.to_csv(output_file, index=False)
@@ -94,7 +94,7 @@ for year in range(1951, 2025):
 
     playoff_df = pd.DataFrame(playoff_rows, columns=playoff_headers)
 
-    output_dir = '/Users/shrenick/PycharmProjects/DefenseWinsChampionships'
+    output_dir = '/Users/shrenick/PycharmProjects/DefenseWinsChampionships/NBA'
     file_name = str(year - 1) + "-" + str(year) + " NBA Playoff Advanced Ratings.csv"
     output_file = os.path.join(output_dir, file_name)
     playoff_df.to_csv(output_file, index=False)
